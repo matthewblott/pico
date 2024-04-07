@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rails Hotwire</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+  <header>
+    <label for="menu"></label>
+    <input type="checkbox" id="menu">
+    <brand>
+      <a href="#">Northwind</a>
+    </brand>
+    <nav>
+      <ul>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Employees</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Regions</a></li>
+        <li><a href="#">Shippers</a></li>
+        <li><a href="#">Suppliers</a></li>
+      </ul>
+      <ul>
+        <li>
+          <span>lanelle@northwind</span>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <menu-open></menu-open>
+    <menu-close></menu-close>
+  </header>
+  <!-- <p class="notice"></p> -->
+  <!-- <p class="alert"></p> -->
+  <h1>Employee</h1>
+  <controls>
+    <a role="button" href="/edit.html">Edit</a>
+    <a role="button" href="#">Addresses</a>
+    <a role="button" href="#">Orders</a>
+    <a role="button" href="/">Back</a>
+  </controls>
+
+  <form method="post">
+    <fieldset disabled>
+      <field>
+        <label>Email</label>
+        <input type="email" name="email" value="admin@example.com">
+      </field>
+
+      <field>
+        <label>Title Of Courtesy</label>
+        <input name="title_of_courtesy" value="Rev">
+      </field>
+
+      <field>
+        <label>First Name</label>
+        <input name="first_name" value="Lanelle">
+      </field>
+
+      <field>
+        <label>Last Name</label>
+        <input name="last_name" value="Schiller">
+      </field>
+
+      <field>
+        <label>Reports To</label>
+        <input type="search" name="q" placeholder="Search" value="Donnie Pfeffer">
+      </field>
+
+      <field>
+        <label>Birth Date</label>
+        <input type="date" name="birth_date" value="1999-02-22">
+      </field>
+
+      <field>
+        <label>Region</label>
+        <input type="search" name="q" placeholder="Search" value="Argentina">
+      </field>
+
+      <field>
+        <label>Hire Date</label>
+        <input type="date" name="hire_date" value="2010-01-26">
+      </field>
+
+      <field>
+        <label>Home Phone</label>
+        <input name="home_phone" value="1-898-270-7543 x06094">
+      </field>
+
+      <field>
+        <label>Extension</label>
+        <input type="number" name="extension" value="973">
+      </field>
+
+      <field>
+        <label>Photo</label>
+        <input name="photo">
+      </field>
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

@@ -1,93 +1,173 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="color-scheme" content="light">
-  <link rel="stylesheet" href="css/site.css">
-
   <title>Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/site.css">
 </head>
 
 <body>
-  <main class="container">
-    <h1>Employee</h1>
+  <header>
+    <label for="menu"></label>
+    <input type="checkbox" id="menu">
+    <brand>
+      <a href="#">Northwind</a>
+    </brand>
+    <nav>
+      <ul>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Employees</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Regions</a></li>
+        <li><a href="#">Shippers</a></li>
+        <li><a href="#">Suppliers</a></li>
+      </ul>
+      <ul>
+        <li>
+          <span>lanelle@northwind</span>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <menu-open></menu-open>
+    <menu-close></menu-close>
+  </header>
+  <!-- <p class="notice"></p> -->
+  <!-- <p class="alert"></p> -->
+  <h1>Employees</h1>
+  <controls>
+    <a role="button" href="#">First</a>
+    <a role="button" href="#">Previous</a>
+    <a role="button" href="#">Next</a>
+    <a role="button" href="#">Last</a>
+    <a role="button" href="/new.html">New</a>
+  </controls>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Line Manager</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td title="Name">
+          <a href="/show.html">Lanelle Schiller</a>
+        </td>
+        <td title="Line Manager">
+          Donnie Pfeffer
+        </td>
+        <td title="Region">
+          Argentina
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Alfonzo Stanton</a>
+        </td>
+        <td title="Line Manager">
 
-    <fieldset>
+        </td>
+        <td title="Region">
+          Tuvalu
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Stephany Zboncak</a>
+        </td>
+        <td title="Line Manager">
+          Alfonzo Stanton
+        </td>
+        <td title="Region">
+          Martinique
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Darren Hyatt</a>
+        </td>
+        <td title="Line Manager">
+          Alfonzo Stanton
+        </td>
+        <td title="Region">
+          Mozambique
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Kimberley Little</a>
+        </td>
+        <td title="Line Manager">
+          Alfonzo Stanton
+        </td>
+        <td title="Region">
+          Congo
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Wai Sauer</a>
+        </td>
+        <td title="Line Manager">
+          Kimberley Little
+        </td>
+        <td title="Region">
+          Tuvalu
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Sherry Murazik</a>
+        </td>
+        <td title="Line Manager">
 
-      <field>
-        <label for="email">
-          Email
-        </label>
-        <input id="email" name="email" type="email">
-      </field>
-      <field>
-      </field>
+        </td>
+        <td title="Region">
+          South Africa
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Mittie Bins</a>
+        </td>
+        <td title="Line Manager">
+          Alfonzo Stanton
+        </td>
+        <td title="Region">
+          Eritrea
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Francisco Yundt</a>
+        </td>
+        <td title="Line Manager">
+          Kimberley Little
+        </td>
+        <td title="Region">
+          Nicaragua
+        </td>
+      </tr>
+      <tr>
+        <td title="Name">
+          <a href="#">Elin Quigley</a>
+        </td>
+        <td title="Line Manager">
 
-      <field>
-        <label for="first-name">
-          First Name
-        </label>
-        <input id="first-name" name="first-name" type="text">
-      </field>
+        </td>
+        <td title="Region">
+          Martinique
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-      <field>
-        <label for="last-name">
-          Last Name
-        </label>
-        <input id="last-name" name="last-name" type="text">
-      </field>
-
-      <field>
-        <label>Sex<label>
-            <input name="sex" type="radio">
-            <input name="sex" type="radio">
-      </field>
-
-      <field>
-        <label for="birth-date">
-          Birth Date
-        </label>
-        <input id="birth-date" name="birth-date" type="date">
-      </field>
-
-      <field>
-        <label for="active">Active<label>
-            <input name="active" id="active" type="checkbox">
-      </field>
-      <field>
-        <label for="hire-date">
-          Hire Date
-        </label>
-        <input id="hire-date" name="hire-date" type="date">
-      </field>
-
-      <field>
-        <label for="start-time">
-          Start Time
-        </label>
-        <input id="start-time" name="start-time" type="time">
-      </field>
-      <field>
-        <label for="finish-time">
-          Finish Time
-        </label>
-        <input id="finish-time" name="finish-time" type="time">
-      </field>
-
-
-      <field>
-        <button>Save</button>
-      </field>
-      <field>
-      </field>
-
-
-    </fieldset>
-
-  </main>
 </body>
 
 </html>

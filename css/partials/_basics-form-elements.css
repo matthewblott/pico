@@ -102,11 +102,19 @@ fieldset legend {
 margin-bottom: calc(var(--pico-spacing) * 0.5);
 }
 
-input:not([type=checkbox], [type=radio]),
-button[type=submit],
+input:not([type=checkbox], [type=radio]
+/* Changed and added the following line */
+,[type=date]
+),
+/* button[type=submit], */
 select,
 textarea {
 width: 100%;
+}
+
+/* Added */
+input[type=date] {
+  min-width: 10rem;
 }
 
 input:not([type=checkbox], [type=radio], [type=range], [type=file]),

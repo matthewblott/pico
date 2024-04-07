@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rails Hotwire</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+  <header>
+    <label for="menu"></label>
+    <input type="checkbox" id="menu">
+    <brand>
+      <a href="#">Northwind</a>
+    </brand>
+    <nav>
+      <ul>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Employees</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Regions</a></li>
+        <li><a href="#">Shippers</a></li>
+        <li><a href="#">Suppliers</a></li>
+      </ul>
+      <ul>
+        <li>
+          <span>lanelle@northwind</span>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <menu-open></menu-open>
+    <menu-close></menu-close>
+  </header>
+  <!-- <p class="notice"></p> -->
+  <!-- <p class="alert"></p> -->
+  <h1>New Employee</h1>
+
+  <controls>
+    <button>Create</button>
+    <a role="button" href="/">Back</a>
+  </controls>
+
+  <form method="post">
+    <fieldset>
+      <field>
+        <label>Email</label>
+        <input type="email" name="email">
+      </field>
+
+      <field>
+        <label>Title Of Courtesy</label>
+        <input name="title_of_courtesy">
+      </field>
+
+      <field>
+        <label>First Name</label>
+        <input name="first_name">
+      </field>
+
+      <field>
+        <label>Last Name</label>
+        <input name="last_name">
+      </field>
+
+      <field>
+        <label>Reports To</label>
+        <input type="search" name="q" placeholder="Search">
+      </field>
+
+      <field>
+        <label>Birth Date</label>
+        <input type="date" name="birth_date">
+      </field>
+
+
+      <field>
+        <label>Region</label>
+        <input type="search" name="q" placeholder="Search">
+      </field>
+
+      <field>
+        <label>Hire Date</label>
+        <input type="date" name="hire_date">
+      </field>
+
+      <field>
+        <label>Home Phone</label>
+        <input name="home_phone">
+      </field>
+
+      <field>
+        <label>Extension</label>
+        <input type="number" name="extension">
+      </field>
+
+      <field>
+        <label>Photo</label>
+        <input name="photo">
+      </field>
+
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
