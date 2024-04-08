@@ -30,3 +30,23 @@ table.striped tbody tr:nth-child(odd) td {
 background-color: var(--pico-table-row-stripped-background-color);
 }
 
+/* Make tables a more readable format on small screens */
+@media (max-width: 624px) {
+  thead {
+    display: none;
+  }
+  
+  td {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  td::before {
+    content: attr(title);
+  }
+
+  td:last-of-type {
+    border-bottom: 1px solid lightblue;
+  }
+
+}
