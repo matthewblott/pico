@@ -49,8 +49,6 @@ body > header:first-of-type {
   align-items: center;
   min-height: var(--menu-icon-height);
 
-  /* background-color: blue; */
-
   label:first-of-type {
     display: none;
   }
@@ -73,13 +71,13 @@ body > header:first-of-type {
     justify-content: center;
 
     ul {
-      /* margin: 0; */
       padding: 0;
       display: flex;
       font-size: var(--menu-font-size);
 
       li {
         list-style: none;
+        margin-right: 0.5rem;
       }
     }
     
