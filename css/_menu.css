@@ -49,11 +49,11 @@ body > header:first-of-type {
   align-items: center;
   min-height: var(--menu-icon-height);
 
-  label:first-of-type {
+  > label:first-of-type {
     display: none;
   }
 
-  input[type="checkbox"] {
+  > input[type="checkbox"] {
     display: none;
 
     &~menu-open {
@@ -65,23 +65,23 @@ body > header:first-of-type {
     }
   }
 
-  nav:first-of-type {
+  > nav:first-of-type {
     width: calc(100% - var(--menu-right-width));
     display: flex;
     justify-content: center;
 
-    ul {
+    > ul {
       padding: 0;
       display: flex;
       font-size: var(--menu-font-size);
 
-      li {
+      > li {
         list-style: none;
         margin-right: 0.5rem;
       }
     }
     
-    ul:last-of-type {
+    > ul:last-of-type {
       width: var(--menu-right-width);
       display: flex;
       justify-content: flex-end;
@@ -93,13 +93,12 @@ body > header:first-of-type {
 }
 
 @media (max-width: 1024px) {
-
   body > header:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
-    label:first-of-type {
+    > label:first-of-type {
       top: 0;
       right: 0;
       position: fixed;
@@ -112,7 +111,7 @@ body > header:first-of-type {
       z-index: 1;
     }
 
-    input[type="checkbox"] {
+    > input[type="checkbox"] {
       &~menu-open {
         top: var(--menu-spacing-top);
         position: fixed;
@@ -131,18 +130,17 @@ body > header:first-of-type {
           display: block;
           width: 100%;
 
-          ul {
+          > ul {
             flex-direction: column;
           }
 
-          ul:last-of-type {
+          > ul:last-of-type {
             flex-direction: column;
             position: relative;
             margin-left: 0.2rem;
           }
 
         }
-          
 
         &~menu-open {
           display: none;
